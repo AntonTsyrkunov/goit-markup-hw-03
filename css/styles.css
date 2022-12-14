@@ -40,9 +40,14 @@ a:focus{
     font-family: roboto, lato, Open Sans,  sans-serif;
 }
 
+
 .list{
     list-style-type: none;
     margin:0;
+}
+
+header {    
+    border-bottom: 1px solid #ECECEC;
 }
 
 .page-header{
@@ -50,7 +55,6 @@ a:focus{
     align-items:center;
     padding-top: 24px;
     padding-bottom: 24px;
-    border-bottom: 1px --header-bottom-line ;
     }
 
 .container{
@@ -94,7 +98,7 @@ a:focus{
 }
 
 .site-nav .nav-item + .nav-item{
-    margin-left:50px;
+    margin-left: 50px;
 }
 
 
@@ -105,7 +109,7 @@ a:focus{
 }
 
 .adress-box .adress-item + .adress-item{
-    margin-left:50px;
+    margin-left: 50px;
 }
 
 .header-adress{
@@ -118,26 +122,21 @@ a:focus{
 }
 /* Герой */
 .section {
-    padding-top: 92px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.section .members-list{
-    padding-bottom: 92px;
-}
-
-.hero {
-    background-color: var(--hero-background-color);
+.hero{
+    margin-top:0; 
     text-align: center;
-   
-}
-
-.hero-section{
-    margin-top:0;
-    margin-bottom: 0;
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
+}
+
+.hero-properties{
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: var(--hero-background-color);
 }
 
 .hero-heading{
@@ -221,6 +220,9 @@ a:focus{
     letter-spacing: 0.03em;
     }
 
+.examples-section{
+    padding-top: 0;
+}
 
 .examples-box{
     display: flex;  
@@ -229,19 +231,38 @@ a:focus{
 }
 
 .examples-box li + li{
-    padding-left:30px;
+    margin-left:30px;
+}
+
+
+.team{
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.team-properties{
+    background-color: var(--filter-button-bckground);
 }
 
 .members-list{
     display:flex;
-    padding-top: 50px;
+    margin-top: 50px;
     padding-left: 0;
 }
 .members-list .member + .member {
-    padding-left: 30px;
+    margin-left: 30px;
 }
 
+.member {
+    padding-bottom: 30px;
+    background-color: var(--main-body-color);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px ;
+    box-shadow: 0px 3px 4px -3px black;
+}
 .name-caption{
+    margin: 30px 0 0 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18em;
@@ -249,6 +270,7 @@ a:focus{
     letter-spacing: 0.03em;
 }
 .team-position{
+    margin: 10px 0 0 0;
     font-size: 16px;
     line-height: 1.18em;
     text-align: center;
@@ -260,13 +282,17 @@ a:focus{
     background-color: var(--hero-background-color);
 }
 
-.down-info{
+.down-info {
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
+.bottom-icon-space {
+    display: inline-block;
+    margin-bottom:20px;
+}
+ 
 .down-adress{
-    padding-top: 20px;
     padding-left: 0px;
 }
 
@@ -314,10 +340,9 @@ a:focus{
 .studio-products{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 32px;
+    margin-top: 32px;
     padding-left: 0px;
     width:calc(100%-(2*30)/3*370);
-    padding-bottom: 94px;
 }
 
 .product:nth-child(3n + 1){
@@ -333,8 +358,7 @@ a:focus{
 }
 
 .product {
-    width: 370px;    
-    padding-bottom: 20px;
+    width: 370px;
 }
 
 .project-caption {
@@ -343,10 +367,8 @@ a:focus{
     line-height: 2.0em;
     text-align: left;
     letter-spacing: 0.06em;
-    padding-left: 24px;
-    margin-top: 20px;
-    margin-bottom: 0;
-
+    padding-left: 24px; 
+    margin: 0
 }
 
 .project-decr{
@@ -362,7 +384,11 @@ a:focus{
 }
 
 .project-outline{
-    outline: 1px solid #EEEEEE;
+    margin-top: -4px;
+    width: 370;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 
 .filter-button {
