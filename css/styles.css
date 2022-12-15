@@ -255,14 +255,23 @@ header {
 }
 
 .member {
-    padding-bottom: 30px;
     background-color: var(--main-body-color);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px ;
     box-shadow: 0px 3px 4px -3px black;
 }
+
+.section .member img {
+    display: block;
+}
+
+.member-data{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
 .name-caption{
-    margin: 30px 0 0 0;
+    margin: 0;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18em;
@@ -334,7 +343,7 @@ header {
 }
 
 .selections-buttons li + li{
-    margin-left: 30px;
+    margin-left: 8px;
 }
 
 .studio-products{
@@ -383,9 +392,13 @@ header {
     margin-bottom: 0;
 }
 
+.studio-products .product img {
+    display: block;
+}
+
 .project-outline{
-    margin-top: -4px;
-    width: 370;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border-right: 1px solid #EEEEEE;
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
